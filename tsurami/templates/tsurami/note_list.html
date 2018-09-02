@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Note{% endblock %}
+
+{% block content %}
+<ul>
+    {{ data }}
+    {% for item in object_list %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

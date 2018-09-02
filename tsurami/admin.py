@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Note, Message, User
+from django.contrib.auth.models import User
+from .models import Note, Comment
 
 admin.site.register(Note)
-admin.site.register(Message)
-admin.site.register(User)
+admin.site.register(Comment)
