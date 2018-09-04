@@ -28,3 +28,8 @@ class MyListView(LoginRequiredMixin, generic.ListView):
             paginate_by = 5
 
         return context
+
+    def get_queryset(self):
+        # ログインユーザの
+        # return self.model.objects.filter(user=self.request.user)
+        return self.request.user.notes.all()

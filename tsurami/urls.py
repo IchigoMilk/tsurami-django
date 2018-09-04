@@ -3,6 +3,6 @@ from . import views
 
 app_name = 'tsurami'
 urlpatterns = [
-    path('', views.IndexView.as_view(), name='index'),
-    path('note/', views.MyListView.as_view(), name='note'),
+    # path('', views.IndexView.as_view(), name='index'),
+    path('', views.MyListView.as_view(), name='index'),
 ]

@@ -25,10 +25,10 @@ SECRET_KEY = '#(to(+-o$j^oho9v))1u=tr@($#jyr-fgsaf+3b1d=_p$0#r*y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = [
     '192.168.33.10'
 ]
-
 
 # Application definition
 
@@ -130,3 +130,6 @@ STATICFILES_DIRS = (
 
 # ログイン後トップページにリダイレクト
 LOGIN_REDIRECT_URL = '/'
+
+# カスタムユーザモデルを使用する
+AUTH_USER_MODEL = 'accounts.User'
