@@ -6,5 +6,5 @@ from tsurami.models import Note
 
 class User(AbstractUser):
     """カスタムユーザ"""
-    aka     = models.CharField('text', max_length=40)
+    aka     = models.CharField(max_length=40, verbose_name="二つ名")
     notes   = models.ManyToManyField(Note, verbose_name='ノート')

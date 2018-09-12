@@ -1,9 +1,10 @@
 from django.shortcuts import render
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
+
 from tsurami.models import Note
 
-# IndexViewというのは名前、本質はTemplateView
+# TemplateViewを継承したIndexView
 class IndexView(LoginRequiredMixin, generic.TemplateView):
     template_name = 'tsurami/index.html'
 
